@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <styLe>  
+    *{
+        margin:0;
+        padding: 0;
+    }
+
+    #con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        width: 500px;
+        height: 600px;
+        box-shadow: 5px 5px 25px rgb(37, 37, 37);
+       display: flex;
+       flex-direction: column;
+     align-items: center;
+    }
+    .inputbar{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top:20px;
+    }
+    .inputbar input{
+        padding: 10px;
+        border-radius: 6px;
+        background-color: beige;
+        border: none;
+        min-width: 300px;
+    }
+    .inputbar button{
+        background-color: rgb(1, 52, 97);
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+    }
+    .location{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 60px;
+    }
+
+    .image{
+        width: 200px;
+        height: 200px;
+       
+       
+    }
+    .weath{
+        font-size: 50px;
+    }
+
+     .details {
+            display: flex;
+            justify-content: space-between;
+            min-width: 200px;
+        }
+
+        .detail-item {
+            text-align: center;
+        }
+
+        .detail-item span {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .weather-icon {
+            font-size: 4rem;
+            margin: 1rem 0;
+            width: 100px;
+            height: 140px;
+        }
+   </style>
+   <script src="weather.js" defer></script>
+</head>
+<body>
+    
+    <div id="con">
+
+        <div class="card">
+          <div class="inputbar">
+            <input id="input" type="text">
+            <button id="btn">search</button>
+        </div>
+
+         <h1 class="location">Hargeisa</h1>
+         <img class="image" src="./images/clear.png" alt="">
+         <h1 class="weath">22°C</h1>
+         <p style="color: gray;">part Cloud</p>
+         <div class="details">
+                <div class="detail-item">
+                    💧<span>Humidity</span>
+                    <span id="humi">65%</span>
+                </div>
+                <div class="detail-item">
+                    💨<span>Wind</span>
+                    <span id="wind">12 km/h</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
